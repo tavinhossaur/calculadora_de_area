@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#202050"
+    android:layout_height="match_parent"
+    tools:context=".AreaQuaActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#202050"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageButton
+            android:id="@+id/btnVoltar1"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#202050"
+            android:src="@drawable/btnvoltar"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tituloQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/fredoka"
+            android:text="Área do Quadrado"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/infoQua"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#371d85"
+            android:src="@drawable/info2"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/subTitleQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/fredoka"
+            android:text="Insira abaixo os dados necessários"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tituloLado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="230dp"
+            android:fontFamily="@font/fredoka"
+            android:text="Lado (cm)"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/inputLado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="260dp"
+            android:ems="20"
+            android:fontFamily="@font/fredoka"
+            android:hint="Insira o lado!"
+            android:inputType="numberDecimal"
+            android:textSize="18sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnCalcQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="350dp"
+            android:backgroundTint="#371d85"
+            android:textStyle="bold"
+            android:fontFamily="@font/fredoka"
+            android:text="Calcular"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/btnLimparQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="350dp"
+            android:backgroundTint="#371d85"
+            android:textStyle="bold"
+            android:fontFamily="@font/fredoka"
+            android:text="Limpar"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/textResQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="420dp"
+            android:fontFamily="@font/fredoka"
+            android:text="A área do quadrado é de:"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/outputQuaCm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="460dp"
+            android:enabled="false"
+            android:ems="23"
+            android:fontFamily="@font/fredoka"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textOu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="530dp"
+            android:fontFamily="@font/fredoka"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/outputQuaM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="570dp"
+            android:enabled="false"
+            android:ems="23"
+            android:fontFamily="@font/fredoka"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </FrameLayout>
+
+</LinearLayout>
